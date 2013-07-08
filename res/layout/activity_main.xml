@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+     
+    <TextView android:id="@+id/titleBar"
+		  android:text="@string/app_name"
+		  android:layout_width="match_parent"
+		  android:layout_height="90dip"
+		  android:textColor="@color/titleTextColor"
+		  android:gravity="center"
+		  android:textSize="35sp"
+		  android:background="@color/titleBackgroundColor" />
+
+   <android.support.v4.view.ViewPager
+	    android:id="@+id/pager"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" >
+     <com.loopj.android.image.SmartImageView
+        android:id="@+id/beatles"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_launcher" />
+   </android.support.v4.view.ViewPager>
+        
+</LinearLayout>
