@@ -10,10 +10,10 @@ public class RightToLeftSwipeListener extends SimpleOnGestureListener {
     @Override
     public boolean onFling(MotionEvent eventOne, MotionEvent eventTwo, 
                                     float velocityX, float velocityY) {
-    	return isLeftToRightSwipe(eventOne, eventTwo, velocityX);
+    	return isRightToLeftSwipe(eventOne, eventTwo, velocityX);
     }
     
-    private boolean isLeftToRightSwipe(MotionEvent eventOne, MotionEvent eventTwo, float velocityX) {
+    private boolean isRightToLeftSwipe(MotionEvent eventOne, MotionEvent eventTwo, float velocityX) {
     	return isSwipe(eventOne.getX(), eventTwo.getX(), velocityX);
     }
     
